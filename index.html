@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p13</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h2{
+            position: fixed;
+            top: 50%;
+            left: 40%;
+            transform: rotate(-90deg);
+            border-bottom: solid black 1em;
+            border-top: solid black 1em;
+        }
+        ol{
+            position: fixed;
+            top: 60%;
+            left: 20%;
+            transform: rotate(-20deg);
+        }
+        .any{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .escola{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .cara{
+            position: fixed;
+            z-index: -5;
+            top: 0;
+            left: 0;
+            transform: rotate(0);
+            animation-name: movcara;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes movcara {
+            0%{
+                top: 0;
+                left: 0;
+                transform: rotate(0);
+            }
+            20%{
+                top: 100%;
+                left: 15%;
+                transform: rotate(45deg);
+            }
+            40%{
+                top: 60%;
+                left: 100%;
+                transform: rotate(90deg);
+            }
+            60%{
+                top: 0;
+                left: 70%;
+                transform: rotate(180deg);
+            }
+            80%{
+                top: 40%;
+                left: 37%;
+                transform: rotate(220deg);
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>titol assignatura</h1>
+        <h2>nom cognom</h2>
+    </header>
+    <main>
+        <ol>
+            <li><a href="">llocweb</a></li>
+            <li><a href="">imatge, video, audio</a></li>
+            <li><a href="">hbsdfhabj</a></li>
+            <li><a href="">freecodecam</a></li>
+        </ol>
+    </main>
+    <footer>
+        <h3 class="any">22/23</h3>
+        <h3 class="escola">EASD Alcoi</h3>
+    </footer>
+    <div class="cara">
+        <img src="img/carita.png" alt="carita">
+    </div>
+</body>
+</html>
